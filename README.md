@@ -177,9 +177,9 @@ This project demonstrates:
 
 - **Character:** Kirby - Nintendo
 - **Music:** "Besame" - Juan Gabriel
-- **Developer:** [Your Name]
-- **Project Type:** Front-End Development Portfolio Piece
-- **Year:** 2025
+- **Developer:** [Maria Paula Salzar Agudelo]
+- **Project Type:** Front-End Development Portfolio semester 2
+- **Year:** 2022
 
 ## License
 
