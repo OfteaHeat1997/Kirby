@@ -49,62 +49,13 @@ const speechBubble = document.getElementById('speechBubble');
 // Set volume
 musicPlayer.volume = 0.5;
 
-// Auto-start music after page loads
+// Auto-start music and dancing - NO BUTTON
 setTimeout(() => {
     musicPlayer.play().catch(err => {
-        console.log("Autoplay blocked. User interaction needed.");
-        // Create click-to-start overlay
-        createStartOverlay();
+        console.log("Music autoplay blocked by browser - will still dance");
     });
+    startDancing();
 }, 500);
-
-// Create start overlay if autoplay is blocked
-function createStartOverlay() {
-    const overlay = document.createElement('div');
-    overlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    `;
-
-    const message = document.createElement('div');
-    message.style.cssText = `
-        background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-        padding: 60px;
-        border-radius: 30px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
-        box-shadow: 0 20px 60px rgba(15, 52, 96, 0.8);
-        border: 5px solid #e94560;
-    `;
-    message.innerHTML = `
-        <h1 style="color: #e94560; margin: 0 0 20px 0; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">START</h1>
-        <p style="color: white; margin: 0; font-size: 1.3em; font-weight: 300;">Click to play music and watch Kirby dance!</p>
-    `;
-
-    overlay.appendChild(message);
-    body.appendChild(overlay);
-
-    overlay.addEventListener('click', () => {
-        musicPlayer.play().then(() => {
-            console.log("Music started successfully!");
-        }).catch(err => {
-            console.error("Music failed to play:", err);
-            alert("Music file not found. Make sure besame.mp3 is in the music folder!");
-        });
-        overlay.remove();
-        startDancing();
-    });
-}
 
 // Movement function
 function moveKirby(direction) {
