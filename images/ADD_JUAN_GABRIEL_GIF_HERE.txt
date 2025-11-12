@@ -1,0 +1,54 @@
+HOW TO ADD JUAN GABRIEL DANCING GIF
+====================================
+
+EASY STEPS:
+-----------
+
+1. Go to Google and search for:
+   "Juan Gabriel dancing GIF"
+
+2. Or go to these sites:
+   - giphy.com
+   - tenor.com
+   - Search "Juan Gabriel dancing" or "Juan Gabriel bailando"
+
+3. Download your favorite Juan Gabriel GIF
+
+4. Rename the file to: juan-gabriel-dancing.gif
+   (exact name, all lowercase)
+
+5. Put it in THIS folder (images/)
+
+6. Refresh your browser and you'll see Juan Gabriel dancing on the left!
+
+
+ALTERNATIVE - Use an online GIF link:
+--------------------------------------
+
+If you find a GIF online and want to use it directly:
+
+1. Right-click on the GIF
+2. Choose "Copy image address"
+3. Open bodykirby.html in a text editor
+4. Find line 19: <img src="images/juan-gabriel-dancing.gif"
+5. Replace "images/juan-gabriel-dancing.gif" with your copied link
+6. Save and refresh!
+
+
+RECOMMENDED GIF SEARCH:
+-----------------------
+Try searching for:
+- Juan Gabriel en concierto
+- Juan Gabriel Amor Eterno
+- Juan Gabriel cantando
+- Juan Gabriel performances
+
+
+TIPS:
+-----
+- GIF should be at least 200px wide for best quality
+- Animated GIFs work best
+- Make sure the file is named exactly: juan-gabriel-dancing.gif
+
+
+That's it! Juan Gabriel will appear dancing on the left side!

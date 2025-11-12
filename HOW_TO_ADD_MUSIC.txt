@@ -1,0 +1,73 @@
+HOW TO ADD JUAN GABRIEL'S "BESAME" SONG
+=========================================
+
+EASIEST METHOD - Download the MP3:
+-----------------------------------
+
+1. Go to one of these sites:
+   - YouTube to MP3: https://ytmp3.cc
+   - Or: https://www.y2mate.com
+   - Or: Buy from iTunes/Amazon
+
+2. Search for: "Juan Gabriel Besame" or "Juan Gabriel Dame un Besame"
+
+3. Download as MP3
+
+4. Rename the file to: besame.mp3
+
+5. Put it in the "music" folder in your Kirby project
+
+6. Open bodykirby.html and it will play automatically!
+
+
+ALTERNATIVE - Use YouTube Video (No Download):
+-----------------------------------------------
+
+1. Find Juan Gabriel's "Besame" on YouTube
+
+2. Copy the VIDEO ID from the URL
+   Example: https://www.youtube.com/watch?v=ABC123xyz
+   The VIDEO_ID is: ABC123xyz
+
+3. Open bodykirby.html in a text editor
+
+4. Find lines 19-22 and ADD these comment symbols:
+   <!--
+   <audio id="backgroundMusic" loop autoplay>
+     <source src="music/besame.mp3" type="audio/mpeg">
+   </audio>
+   -->
+
+5. Find lines 25-34 and REMOVE the comment symbols:
+   Change this:
+   <!--
+   <iframe...>
+   </iframe>
+   -->
+
+   To this:
+   <iframe...>
+   </iframe>
+
+6. Replace "YhBQ6branJA" with your VIDEO_ID in line 30
+
+7. Save and open in browser!
+
+
+Which Song to Use:
+------------------
+Search for these Juan Gabriel songs:
+- "Besame" (the romantic ballad)
+- "Dame un Besame"
+- Any Juan Gabriel song you like!
+
+
+Troubleshooting:
+----------------
+- If music doesn't play: Click anywhere on the page
+- If YouTube doesn't work: Use the MP3 download method
+- Make sure file is named exactly: besame.mp3
+- Check that file is in the "music" folder
+
+
+That's it! Kirby will dance to the real Juan Gabriel music!

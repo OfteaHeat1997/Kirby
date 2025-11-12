@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log
+
+# Optional: Music files (if too large)
+# music/*.mp3
+
+# Optional: Image files (if too large)
+# images/*.gif

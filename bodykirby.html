@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Kirby - Interactive Dance Project</title>
+</head>
+<body>
+      <!-- Header Section -->
+      <header class="project-header">
+        <h1 class="project-title">Kirby Automatic Dance Show</h1>
+        <p class="project-subtitle">Now Playing: Dame un Besame by Juan Gabriel</p>
+      </header>
+
+      <!-- Juan Gabriel Dancing GIF -->
+      <div class="juan-gabriel-container">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExenU5M3p3emtxYm5vYnU2ZmtlY2NsdncxZTRhcmk4MHJrODNzNHF3cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SIphllphVZ0YM/giphy.gif" alt="Juan Gabriel Dancing" class="juan-gabriel-gif">
+        <p class="juan-gabriel-label">Juan Gabriel</p>
+      </div>
+
+      <!-- Audio Element - Plays automatically -->
+      <!-- OPTION 1: Use local file (recommended) -->
+      <audio id="backgroundMusic" loop autoplay>
+        <source src="music/besame.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- OPTION 2: Use YouTube (uncomment this and comment above) -->
+      <!--
+      <iframe
+        id="backgroundMusic"
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/YhBQ6branJA?autoplay=1&loop=1&playlist=YhBQ6branJA"
+        allow="autoplay; encrypted-media"
+        style="display:none;">
+      </iframe>
+      -->
+
+      <section>
+       <span></span>
+        <span></span>
+          <span></span>
+            <span></span>
+              <span></span>
+                <span></span>
+                  <span></span>
+                    <span></span>
+                  <span></span>
+                 <span></span>
+               <span></span>
+               <span></span>
+              <span></span>
+             <span></span>
+        </section>
+  
+    <div class="kirby-container">
+      <div class="hand-group">
+        <div class="hand-1"></div>
+        <div class="hand-2"></div>
+      </div>
+
+      <div class="kirby-head">
+        <div class="kirby-face">
+          <div class="cheek-group">
+            <div class="cheek-left"></div>
+            <div class=" cheek-right"></div>
+          </div>
+          <div class=" mouth">
+            <div class="tongue"></div>
+          </div>
+          <div class="eye-group">
+            <div class="eye-left">
+              <div class="pupil"></div>
+              <div class="pupil-blue"></div>
+            </div>
+            <div class="eye-right">
+              <div class="pupil"></div>
+              <div class="pupil-blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-group">
+        <div class=" foot-left"></div>
+        <div class=" foot-right"></div>
+      </div>
+    </div>
+
+    <script src="JS/kirby.js"></script>
+</body>
+</html>

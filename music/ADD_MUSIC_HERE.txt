@@ -1,0 +1,36 @@
+🎵 HOW TO ADD MUSIC TO YOUR KIRBY PROJECT 🎵
+
+Follow these simple steps:
+
+1. Download "Dame un Besame" by Juan Gabriel
+   - You can get it from: iTunes, Amazon Music, YouTube Music, etc.
+   - Make sure to download it legally!
+
+2. Convert to MP3 format (if it's not already)
+   - Most music is already in MP3 format
+   - If not, use a free converter online
+
+3. Rename the file to: dame-un-besame.mp3
+   - Exact name is important!
+   - Must be lowercase
+   - No spaces
+
+4. Put the file in THIS folder (music/)
+   - Just drag and drop it here
+   - Replace this text file
+
+5. Open bodykirby.html in your browser
+   - Click "Play Music" button
+   - Click "Dance!" button
+   - Enjoy! 🌟
+
+📝 ALTERNATIVE: Use Any Song You Want!
+- Just rename it to "dame-un-besame.mp3"
+- Or edit bodykirby.html line 50 to use your filename
+
+💡 TIP: The file should be in:
+Kirby/music/dame-un-besame.mp3
+
+🎉 That's it! Have fun watching Kirby dance!
+
+Poyo! Poyo! 💖
