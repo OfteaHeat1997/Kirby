@@ -1,0 +1,83 @@
+HOW TO UPDATE YOUR GITHUB PROFILE README
+==========================================
+
+Your Kirby project is now on GitHub at:
+https://github.com/OfteaHeat1997/Kirby
+
+Now let's update your GitHub profile page to showcase your front-end work!
+
+STEP-BY-STEP INSTRUCTIONS:
+--------------------------
+
+1. Go to GitHub: https://github.com/
+
+2. Click the "+" button (top right) and select "New repository"
+
+3. IMPORTANT: Name it exactly: OfteaHeat1997
+   (must match your GitHub username EXACTLY)
+
+4. Make it PUBLIC
+
+5. Check "Add a README file"
+
+6. Click "Create repository"
+
+7. Once created, click on the README.md file
+
+8. Click the pencil icon (Edit this file)
+
+9. Delete everything in the file
+
+10. Open the file: PROFILE_README.md (in your Kirby folder)
+
+11. Copy ALL the content from PROFILE_README.md
+
+12. Paste it into your GitHub README
+
+13. Update these sections with your info:
+    - [Your Email]
+    - [Your LinkedIn]
+    - [Your Portfolio]
+    - [Your Twitter]
+    - [Your Name] in the Credits section
+
+14. Click "Commit changes" at the bottom
+
+15. Visit your profile: https://github.com/OfteaHeat1997
+
+DONE! Your profile will now show:
+- Your front-end developer introduction
+- Tech stack badges
+- Featured projects (Kirby is first!)
+- GitHub stats
+- Skills and learning goals
+
+TIPS:
+-----
+- Add more projects as you complete them
+- Update the "Current Focus" section regularly
+- Add screenshots to your Kirby repository
+- Consider adding a live demo link (using GitHub Pages)
+
+NEXT STEPS FOR KIRBY PROJECT:
+-----------------------------
+
+1. Enable GitHub Pages:
+   - Go to: https://github.com/OfteaHeat1997/Kirby
+   - Click "Settings"
+   - Click "Pages" in left sidebar
+   - Under "Source" select "master" branch
+   - Click "Save"
+   - Your site will be at: https://ofteaheat1997.github.io/Kirby/bodykirby.html
+
+2. Add screenshots:
+   - Take screenshots of your project
+   - Add to images/ folder
+   - Update README.md to show screenshots
+
+3. Share your work:
+   - Add project link to LinkedIn
+   - Share on Twitter/social media
+   - Add to your portfolio website
+
+Your GitHub profile will now show you as a FRONT-END DEVELOPER with awesome projects!
