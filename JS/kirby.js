@@ -48,12 +48,23 @@ const speechBubble = document.getElementById('speechBubble');
 // Set volume
 musicPlayer.volume = 0.5;
 
-// Auto-start music and dancing - NO OVERLAY, NO BUTTON
+// Auto-start music and dancing
 setTimeout(() => {
-    musicPlayer.play().catch(err => {
-        console.log("Autoplay may be blocked - but Kirby will still dance!");
-    });
     startDancing();
+
+    // Try to play music
+    const playPromise = musicPlayer.play();
+    if (playPromise !== undefined) {
+        playPromise.then(() => {
+            console.log("Music is playing!");
+        }).catch(err => {
+            console.log("Music autoplay blocked by browser - Click anywhere to start music");
+            // Allow click anywhere to start music
+            document.addEventListener('click', () => {
+                musicPlayer.play();
+            }, { once: true });
+        });
+    }
 }, 500);
 
 // Movement function
@@ -191,5 +202,17 @@ window.addEventListener('resize', () => {
     kirbyX = Math.max(minX, Math.min(window.innerWidth - 200, kirbyX));
     kirbyY = Math.max(minY, Math.min(window.innerHeight - 350, kirbyY));
 });
+
+// Create status panel with info
+function createStatusPanel() {
+    const status = document.createElement('div');
+    status.className = 'status-panel';
+    status.innerHTML = `
+        <p>Kirby is dancing automatically to Juan Gabriel's "Dame un Besame"! Watch him move, talk, and dance!</p>
+    `;
+    body.appendChild(status);
+}
+
+createStatusPanel();
 
 console.log("Kirby Automatic Dance Project - Music plays automatically!");
