@@ -48,61 +48,13 @@ const speechBubble = document.getElementById('speechBubble');
 // Set volume
 musicPlayer.volume = 0.5;
 
-// Auto-start music after page loads
+// Auto-start music and dancing - NO OVERLAY, NO BUTTON
 setTimeout(() => {
     musicPlayer.play().catch(err => {
-        console.log("Autoplay blocked. User interaction needed.");
-        // Create click-to-start overlay
-        createStartOverlay();
+        console.log("Autoplay may be blocked - but Kirby will still dance!");
     });
+    startDancing();
 }, 500);
-
-// Create start overlay if autoplay is blocked
-function createStartOverlay() {
-    const overlay = document.createElement('div');
-    overlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    `;
-
-    const message = document.createElement('div');
-    message.style.cssText = `
-        background: linear-gradient(135deg, #ff2d75 0%, #ff6b9d 100%);
-        padding: 60px;
-        border-radius: 30px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
-        box-shadow: 0 20px 60px rgba(255, 45, 117, 0.5);
-    `;
-    message.innerHTML = `
-        <h1 style="color: white; margin: 0 0 20px 0; font-size: 3em;">START</h1>
-        <p style="color: white; margin: 0; font-size: 1.3em; font-weight: 300;">Click to play music and watch Kirby dance!</p>
-    `;
-
-    overlay.appendChild(message);
-    body.appendChild(overlay);
-
-    overlay.addEventListener('click', () => {
-        musicPlayer.play().then(() => {
-            console.log("Music started successfully!");
-        }).catch(err => {
-            console.error("Music failed to play:", err);
-            alert("Music file not found. Make sure besame.mp3 is in the music folder!");
-        });
-        overlay.remove();
-        startDancing();
-    });
-}
 
 // Movement function
 function moveKirby(direction) {
@@ -239,17 +191,5 @@ window.addEventListener('resize', () => {
     kirbyX = Math.max(minX, Math.min(window.innerWidth - 200, kirbyX));
     kirbyY = Math.max(minY, Math.min(window.innerHeight - 350, kirbyY));
 });
-
-// Create status panel
-function createStatusPanel() {
-    const status = document.createElement('div');
-    status.className = 'status-panel';
-    status.innerHTML = `
-        <p>Kirby is dancing automatically to the music!</p>
-    `;
-    body.appendChild(status);
-}
-
-createStatusPanel();
 
 console.log("Kirby Automatic Dance Project - Music plays automatically!");
