@@ -8,6 +8,8 @@
 
 ## Live Demo
 
+**[🎮 WATCH KIRBY DANCE LIVE!](https://ofteaheat1997.github.io/Kirby/bodykirby.html)**
+
 Watch Kirby dance automatically with Juan Gabriel!
 
 ## Features
